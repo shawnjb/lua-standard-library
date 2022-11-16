@@ -12,7 +12,6 @@ jobs:
     steps:
 			- name: Checkout
 					uses: actions/checkout@v2
-			- name: Move README.md to ./site folder
 					run: |
 						mv README.md site
 			- name: Deploy to GitHub Pages
