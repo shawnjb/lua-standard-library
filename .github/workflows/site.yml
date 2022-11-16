@@ -1,29 +1,19 @@
-
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches:
-      - master
+	push:
+		branches:
+			- master
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-			- name: Checkout
-				uses: actions/checkout@v2
-				with:
-					ref: master
-					token: ${{ secrets.GITHUB_TOKEN }}
-					path: site
-
-			- name: Move the README.md file to the site folder
+	deploy:
+		runs-on: ubuntu-latest
+		steps:
+			- name: Move README to site
 				run: |
-					mv README.md site/README.md
-
+					cp README.md site/README.md
 			- name: Deploy to GitHub Pages
 				uses: JamesIves/github-pages-deploy-action@releases/v3
 				with:
 					branch: gh-pages
 					folder: site
-					
