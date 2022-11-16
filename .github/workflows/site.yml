@@ -11,7 +11,8 @@ jobs:
     steps:
       - name: Copy README.md to site
         run: |
-          cp $GITHUB_WORKSPACE/README.md $GITHUB_WORKSPACE/site/README.md
+          cd $GITHUB_WORKSPACE
+          cp README.md site/README.md
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
