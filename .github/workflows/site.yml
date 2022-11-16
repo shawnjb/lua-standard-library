@@ -10,10 +10,16 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-			- name: Move README.md to site
+			- name: Checkout
 				uses: actions/checkout@v2
+				with:
+					ref: master
+					token: ${{ secrets.GITHUB_TOKEN }}
+					path: site
+
+			- name: Move the README.md file to the site folder
 				run: |
-					mv README.md site/
+					mv README.md site/README.md
 
 			- name: Deploy to GitHub Pages
 				uses: JamesIves/github-pages-deploy-action@releases/v3
