@@ -9,6 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
       - name: Copy README.md to site
         run: |
           cd $GITHUB_WORKSPACE
