@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Move README to site
         run: |
-          cp ./README.md ./site/README.md
+          mv README.md site/
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
