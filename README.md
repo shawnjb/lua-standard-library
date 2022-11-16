@@ -1,10 +1,8 @@
-# Lua Standard Library
+<h1><img src="https://asset.brandfetch.io/idpR3qNoyU/id_LDWZ-VP.svg" alt="lua_logo" width="24px" /> Lua Standard Library</h1>
 
 Implement popular data structures & algorithms into your Lua applications. This repository is a completely rewritten version of the portuguese version, which can be found [here](https://github.com/tomieiro/LuaSTDL).
 
-<p>
-  <img src="https://asset.brandfetch.io/idpR3qNoyU/id_LDWZ-VP.svg" alt="lua_logo" width="24px" />  Lua: https://www.lua.org/
-</p>
+Interested in learning Lua? Try taking a [Codecademy course on Lua](https://www.codecademy.com/learn/learn-lua), or read the [official documentation](https://lua.org/).
 
 ## Motivation
 
