@@ -3,7 +3,7 @@
 Implement popular data structures & algorithms into your Lua applications. This repository is a completely rewritten version of the portuguese version, which can be found [here](https://github.com/tomieiro/LuaSTDL).
 
 <p>
-  <img src="https://www.andreas-rozek.de/Lua/Lua-Logo_32x32.png" alt="lua_logo"/ align=center>  Lua: https://www.lua.org/
+  <img src="https://www.andreas-rozek.de/Lua/Lua-Logo_32x32.png" alt="lua_logo" width="24px" />  Lua: https://www.lua.org/
 </p>
 
 ## Motivation
