@@ -1,6 +1,6 @@
 # Lua Standard Library
 
-Lua language library that implements more used data structures & main algorithms.
+Implement popular data structures & algorithms into your Lua applications.
 
 <p>
   <img src="https://www.andreas-rozek.de/Lua/Lua-Logo_32x32.png" alt="lua_logo"/ align=center>  Lua: https://www.lua.org/
