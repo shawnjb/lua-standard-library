@@ -9,9 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Move README to site
+      - name: Copy README.md to site
         run: |
-          mv README.md site/
+          cp $GITHUB_WORKSPACE/README.md $GITHUB_WORKSPACE/site/README.md
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
