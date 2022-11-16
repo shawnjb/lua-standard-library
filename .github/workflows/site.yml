@@ -11,13 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 			- name: Checkout
-				uses: actions/checkout@v2
+					uses: actions/checkout@v2
 			- name: Move README.md to ./site folder
-				run: |
-					mv README.md site
-
+					run: |
+						mv README.md site
 			- name: Deploy to GitHub Pages
-				uses: JamesIves/github-pages-deploy-action@releases/v3
-				with:
-					branch: gh-pages
-					folder: site
+					uses: JamesIves/github-pages-deploy-action@releases/v3
+					with:
+						branch: gh-pages
+						folder: site
