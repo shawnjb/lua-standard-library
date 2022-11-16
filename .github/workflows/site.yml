@@ -10,11 +10,14 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-			- uses: actions/checkout@v2
-			- run: |
-				mv README.md site
+			- name: Move README.md to site
+				uses: actions/checkout@v2
+				run: |
+					mv README.md site/
+
 			- name: Deploy to GitHub Pages
 				uses: JamesIves/github-pages-deploy-action@releases/v3
 				with:
 					branch: gh-pages
 					folder: site
+					
