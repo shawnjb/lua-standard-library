@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/avltree.html">avltree</a></li>
+  <li><a href="../modules/binarytree.html">binarytree</a></li>
+  <li><a href="../modules/graph.html">graph</a></li>
+  <li><a href="../modules/hash.html">hash</a></li>
+  <li><a href="../modules/list.html">list</a></li>
+  <li><a href="../modules/map.html">map</a></li>
+  <li><a href="../modules/matrix.html">matrix</a></li>
+  <li><strong>priorityqueue</strong></li>
+  <li><a href="../modules/queue.html">queue</a></li>
+  <li><a href="../modules/stack.html">stack</a></li>
+  <li><a href="../modules/vector.html">vector</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>priorityqueue</code></h1>
+<p>Priority queue is a data structure that allows to insert elements with a priority and then retrieve them in order of priority.</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#new">new ()</a></td>
+	<td class="summary">Creates a new priority queue.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#insert">insert (value, priority)</a></td>
+	<td class="summary">Inserts a new element in the priority queue.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#pop">pop ()</a></td>
+	<td class="summary">Retrieves the element with the highest priority.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#peek">peek ()</a></td>
+	<td class="summary">Retrieves the element with the highest priority without removing it.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#count">count ()</a></td>
+	<td class="summary">Retrieves the number of elements in the priority queue.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#isEmpty">isEmpty ()</a></td>
+	<td class="summary">Checks if the priority queue is empty.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#heapifyUp">heapifyUp (index)</a></td>
+	<td class="summary">Heapifies the priority queue up.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#heapifyDown">heapifyDown (index)</a></td>
+	<td class="summary">Heapifies the priority queue down.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#swap">swap (index1, index2)</a></td>
+	<td class="summary">Swaps two elements in the priority queue.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "new"></a>
+    <strong>new ()</strong>
+    </dt>
+    <dd>
+    Creates a new priority queue.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        table priorityqueue The new priority queue.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "insert"></a>
+    <strong>insert (value, priority)</strong>
+    </dt>
+    <dd>
+    Inserts a new element in the priority queue.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">value</span>
+         any The value of the element.
+        </li>
+        <li><span class="parameter">priority</span>
+         number The priority of the element.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "pop"></a>
+    <strong>pop ()</strong>
+    </dt>
+    <dd>
+    Retrieves the element with the highest priority.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        any value The value of the element.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "peek"></a>
+    <strong>peek ()</strong>
+    </dt>
+    <dd>
+    Retrieves the element with the highest priority without removing it.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        any value The value of the element.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "count"></a>
+    <strong>count ()</strong>
+    </dt>
+    <dd>
+    Retrieves the number of elements in the priority queue.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number count The number of elements.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "isEmpty"></a>
+    <strong>isEmpty ()</strong>
+    </dt>
+    <dd>
+    Checks if the priority queue is empty.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        boolean isEmpty True if the priority queue is empty, false otherwise.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "heapifyUp"></a>
+    <strong>heapifyUp (index)</strong>
+    </dt>
+    <dd>
+    Heapifies the priority queue up.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+         number The index of the element to heapify.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "heapifyDown"></a>
+    <strong>heapifyDown (index)</strong>
+    </dt>
+    <dd>
+    Heapifies the priority queue down.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+         number The index of the element to heapify.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "swap"></a>
+    <strong>swap (index1, index2)</strong>
+    </dt>
+    <dd>
+    Swaps two elements in the priority queue.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index1</span>
+         number The index of the first element.
+        </li>
+        <li><span class="parameter">index2</span>
+         number The index of the second element.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2022-11-15 22:36:23 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
