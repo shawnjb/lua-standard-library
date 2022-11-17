@@ -1,4 +1,5 @@
---- Quick sort algorithm.
+--- Quick sorting is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order. It's one of the most commonly used sorting algorithms.
+--- 
 --- @param array table
 --- @return table array
 local function quicksort(array)

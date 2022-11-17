@@ -1,4 +1,4 @@
---- Tarjan algorithm for finding strongly connected components in a graph.
+--- Tarjan's algorithm is a graph theory algorithm for finding the strongly connected components of a graph. It is a linear-time algorithm that is useful for many graph algorithms.
 --- @param graph table
 --- @return table components
 local function tarjan(graph)

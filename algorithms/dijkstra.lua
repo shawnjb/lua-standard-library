@@ -1,4 +1,5 @@
---- Dijkstra's algorithm
+--- Search for the shortest path between two nodes in a graph using Dijkstra's algorithm.
+---
 --- @param graph table
 --- @param start table
 --- @param goal table

@@ -1,11 +1,6 @@
 --- An AVLNode is a node in an AVL tree.
---- @field value any The value of the node.
---- @field left AVLNode The left child of the node.
---- @field right AVLNode The right child of the node.
---- @field height number The height of the node.
---- @field balance number The balance of the node.
---- @field parent AVLNode The parent of the node.
---- @field tree AVLTree The tree the node belongs to.
+---
+--- AVL trees are self-balancing binary search trees. These trees are strictly balanced, meaning that the height of the left and right subtrees of any node differ by at most one.
 local AVLNode = {}
 AVLNode.__index = AVLNode
 
@@ -15,12 +10,19 @@ AVLNode.__index = AVLNode
 --- @return AVLNode AVLNode The new node.
 function AVLNode.new(tree, value)
 	local self = setmetatable({}, AVLNode)
+	--- The value of the node.
 	self.value = value
+	--- The left child of the node.
 	self.left = nil
+	--- The right child of the node.
 	self.right = nil
+	--- The height of the node.
 	self.height = 1
+	--- The balance of the node.
 	self.balance = 0
+	--- The parent of the node.
 	self.parent = nil
+	--- The tree the node belongs to.
 	self.tree = tree
 	return self
 end

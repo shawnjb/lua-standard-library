@@ -1,4 +1,4 @@
---- Merge sort algorithm.
+--- The merge sorting algorithm is a comparison-based algorithm that recursively divides a list in half, sorts the sublists, and then merges them back together.
 --- @param array table
 --- @return table array
 local function mergesort(array)
