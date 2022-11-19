@@ -1,4 +1,3 @@
---- Vector data structure.
 local vector = {}
 vector.__index = vector
 

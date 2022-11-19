@@ -1,4 +1,3 @@
---- @class matrix
 --- @field private _rows number
 --- @field private _columns number
 --- @field private _data table

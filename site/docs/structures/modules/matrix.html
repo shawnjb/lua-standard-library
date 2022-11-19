@@ -38,14 +38,10 @@
 
 <h2>Modules</h2>
 <ul class="nowrap">
-  <li><a href="../modules/avltree.html">avltree</a></li>
-  <li><a href="../modules/binarytree.html">binarytree</a></li>
-  <li><a href="../modules/graph.html">graph</a></li>
+  <li><a href="../modules/circularbuffer.html">circularbuffer</a></li>
+  <li><a href="../modules/doubleendedqueue.html">doubleendedqueue</a></li>
   <li><strong>matrix</strong></li>
-  <li><a href="../modules/priorityqueue.html">priorityqueue</a></li>
-  <li><a href="../modules/queue.html">queue</a></li>
   <li><a href="../modules/stack.html">stack</a></li>
-  <li><a href="../modules/vector.html">vector</a></li>
 </ul>
 
 </div>
@@ -53,7 +49,9 @@
 <div id="content">
 
 <h1>Module <code>matrix</code></h1>
-<p>Matrix data structure.</p>
+<p>
+
+</p>
 <p>
 
 </p>
@@ -66,20 +64,132 @@
 	<td class="summary">Creates a new matrix.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#insert">insert (row, column, value)</a></td>
-	<td class="summary">Inserts a new element in the matrix.</td>
+	<td class="name" nowrap><a href="#fromTable">fromTable (data)</a></td>
+	<td class="summary">Creates a new matrix from a table.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#fromString">fromString (data)</a></td>
+	<td class="summary">Creates a new matrix from a string.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getRows">getRows ()</a></td>
+	<td class="summary">Returns the number of rows in the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getColumns">getColumns ()</a></td>
+	<td class="summary">Returns the number of columns in the matrix.</td>
 	</tr>
 	<tr>
 	<td class="name" nowrap><a href="#get">get (row, column)</a></td>
-	<td class="summary">Retrieves the element at the specified row and column.</td>
+	<td class="summary">Returns the value at the given row and column.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#count">count ()</a></td>
-	<td class="summary">Retrieves the number of elements in the matrix.</td>
+	<td class="name" nowrap><a href="#set">set (row, column, value)</a></td>
+	<td class="summary">Sets the value at the given row and column.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#isEmpty">isEmpty ()</a></td>
-	<td class="summary">Checks if the matrix is empty.</td>
+	<td class="name" nowrap><a href="#getRow">getRow (index)</a></td>
+	<td class="summary">Returns the row at the given index.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setRow">setRow (index, row)</a></td>
+	<td class="summary">Sets the row at the given index.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getColumn">getColumn (index)</a></td>
+	<td class="summary">Returns the column at the given index.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setColumn">setColumn (index, column)</a></td>
+	<td class="summary">Sets the column at the given index.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getDiagonal">getDiagonal ()</a></td>
+	<td class="summary">Returns the diagonal of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setDiagonal">setDiagonal (diagonal)</a></td>
+	<td class="summary">Sets the diagonal of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getSubmatrix">getSubmatrix (row, column, rows, columns)</a></td>
+	<td class="summary">Returns the submatrix of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#setSubmatrix">setSubmatrix (row, column, submatrix)</a></td>
+	<td class="summary">Sets the submatrix of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getTranspose">getTranspose ()</a></td>
+	<td class="summary">Returns the transpose of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getDeterminant">getDeterminant ()</a></td>
+	<td class="summary">Returns the determinant of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getMinor">getMinor (row, column)</a></td>
+	<td class="summary">Returns the minor of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getCofactor">getCofactor (row, column)</a></td>
+	<td class="summary">Returns the cofactor of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getAdjugate">getAdjugate ()</a></td>
+	<td class="summary">Returns the adjugate of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getTrace">getTrace ()</a></td>
+	<td class="summary">Returns the trace of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getNorm">getNorm ()</a></td>
+	<td class="summary">Returns the norm of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getRank">getRank ()</a></td>
+	<td class="summary">Returns the rank of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getConditionNumber">getConditionNumber ()</a></td>
+	<td class="summary">Returns the condition number of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getEigenvalues">getEigenvalues ()</a></td>
+	<td class="summary">Returns the eigenvalues of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getInverse">getInverse ()</a></td>
+	<td class="summary">Returns the inverse of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getLUPDecomposition">getLUPDecomposition ()</a></td>
+	<td class="summary">Returns the LUP decomposition of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getLU">getLU ()</a></td>
+	<td class="summary">Returns the LU decomposition of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getQR">getQR ()</a></td>
+	<td class="summary">Returns the QR decomposition of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getCholesky">getCholesky ()</a></td>
+	<td class="summary">Returns the Cholesky decomposition of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getCopy">getCopy ()</a></td>
+	<td class="summary">Returns a copy of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#swapRows">swapRows (i, j)</a></td>
+	<td class="summary">Swaps two rows of the matrix.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#swapColumns">swapColumns (i, j)</a></td>
+	<td class="summary">Swaps two columns of the matrix.</td>
 	</tr>
 </table>
 
@@ -101,10 +211,10 @@
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">rows</span>
-         number The number of rows.
+         number The number of rows in the matrix.
         </li>
         <li><span class="parameter">columns</span>
-         number The number of columns.
+         number The number of columns in the matrix.1
         </li>
     </ul>
 
@@ -119,26 +229,88 @@
 
 </dd>
     <dt>
-    <a name = "insert"></a>
-    <strong>insert (row, column, value)</strong>
+    <a name = "fromTable"></a>
+    <strong>fromTable (data)</strong>
     </dt>
     <dd>
-    Inserts a new element in the matrix.
+    Creates a new matrix from a table.
 
 
     <h3>Parameters:</h3>
     <ul>
-        <li><span class="parameter">row</span>
-         number The row of the element.
-        </li>
-        <li><span class="parameter">column</span>
-         number The column of the element.
-        </li>
-        <li><span class="parameter">value</span>
-         any The value of the element.
+        <li><span class="parameter">data</span>
+         table The table to create the matrix from.
         </li>
     </ul>
 
+    <h3>Returns:</h3>
+    <ol>
+
+        table matrix The new matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "fromString"></a>
+    <strong>fromString (data)</strong>
+    </dt>
+    <dd>
+    Creates a new matrix from a string.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">data</span>
+         string The string to create the matrix from.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        table matrix The new matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getRows"></a>
+    <strong>getRows ()</strong>
+    </dt>
+    <dd>
+    Returns the number of rows in the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number rows The number of rows in the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getColumns"></a>
+    <strong>getColumns ()</strong>
+    </dt>
+    <dd>
+    Returns the number of columns in the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number columns The number of columns in the matrix.
+    </ol>
 
 
 
@@ -149,23 +321,23 @@
     <strong>get (row, column)</strong>
     </dt>
     <dd>
-    Retrieves the element at the specified row and column.
+    Returns the value at the given row and column.
 
 
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">row</span>
-         number The row of the element.
+         number The row of the value.
         </li>
         <li><span class="parameter">column</span>
-         number The column of the element.
+         number The column of the value.
         </li>
     </ul>
 
     <h3>Returns:</h3>
     <ol>
 
-        any value The value of the element.
+        number value The value at the given row and column.
     </ol>
 
 
@@ -173,18 +345,50 @@
 
 </dd>
     <dt>
-    <a name = "count"></a>
-    <strong>count ()</strong>
+    <a name = "set"></a>
+    <strong>set (row, column, value)</strong>
     </dt>
     <dd>
-    Retrieves the number of elements in the matrix.
+    Sets the value at the given row and column.
 
 
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">row</span>
+         number The row of the value.
+        </li>
+        <li><span class="parameter">column</span>
+         number The column of the value.
+        </li>
+        <li><span class="parameter">value</span>
+         number The value to set.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getRow"></a>
+    <strong>getRow (index)</strong>
+    </dt>
+    <dd>
+    Returns the row at the given index.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+         number The index of the row.
+        </li>
+    </ul>
 
     <h3>Returns:</h3>
     <ol>
 
-        number count The number of elements.
+        table row The row at the given index.
     </ol>
 
 
@@ -192,19 +396,546 @@
 
 </dd>
     <dt>
-    <a name = "isEmpty"></a>
-    <strong>isEmpty ()</strong>
+    <a name = "setRow"></a>
+    <strong>setRow (index, row)</strong>
     </dt>
     <dd>
-    Checks if the matrix is empty.
+    Sets the row at the given index.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+         number The index of the row.
+        </li>
+        <li><span class="parameter">row</span>
+         table The row to set.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getColumn"></a>
+    <strong>getColumn (index)</strong>
+    </dt>
+    <dd>
+    Returns the column at the given index.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+         number The index of the column.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        table column The column at the given index.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setColumn"></a>
+    <strong>setColumn (index, column)</strong>
+    </dt>
+    <dd>
+    Sets the column at the given index.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+         number The index of the column.
+        </li>
+        <li><span class="parameter">column</span>
+         table The column to set.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getDiagonal"></a>
+    <strong>getDiagonal ()</strong>
+    </dt>
+    <dd>
+    Returns the diagonal of the matrix.
 
 
 
     <h3>Returns:</h3>
     <ol>
 
-        boolean isEmpty True if the matrix is empty, false otherwise.
+        table diagonal The diagonal of the matrix.
     </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setDiagonal"></a>
+    <strong>setDiagonal (diagonal)</strong>
+    </dt>
+    <dd>
+    Sets the diagonal of the matrix.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">diagonal</span>
+         table The diagonal to set.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getSubmatrix"></a>
+    <strong>getSubmatrix (row, column, rows, columns)</strong>
+    </dt>
+    <dd>
+    Returns the submatrix of the matrix.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">row</span>
+         number The row of the submatrix.
+        </li>
+        <li><span class="parameter">column</span>
+         number The column of the submatrix.
+        </li>
+        <li><span class="parameter">rows</span>
+         number The number of rows in the submatrix.
+        </li>
+        <li><span class="parameter">columns</span>
+         number The number of columns in the submatrix.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        table submatrix The submatrix of the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "setSubmatrix"></a>
+    <strong>setSubmatrix (row, column, submatrix)</strong>
+    </dt>
+    <dd>
+    Sets the submatrix of the matrix.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">row</span>
+         number The row of the submatrix.
+        </li>
+        <li><span class="parameter">column</span>
+         number The column of the submatrix.
+        </li>
+        <li><span class="parameter">submatrix</span>
+         table The submatrix to set.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getTranspose"></a>
+    <strong>getTranspose ()</strong>
+    </dt>
+    <dd>
+    Returns the transpose of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        table transpose The transpose of the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getDeterminant"></a>
+    <strong>getDeterminant ()</strong>
+    </dt>
+    <dd>
+    Returns the determinant of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number? determinant The determinant of the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getMinor"></a>
+    <strong>getMinor (row, column)</strong>
+    </dt>
+    <dd>
+    Returns the minor of the matrix.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">row</span>
+         number The row of the minor.
+        </li>
+        <li><span class="parameter">column</span>
+         number The column of the minor.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number minor The minor of the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getCofactor"></a>
+    <strong>getCofactor (row, column)</strong>
+    </dt>
+    <dd>
+    Returns the cofactor of the matrix.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">row</span>
+         number The row of the cofactor.
+        </li>
+        <li><span class="parameter">column</span>
+         number The column of the cofactor.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number cofactor The cofactor of the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getAdjugate"></a>
+    <strong>getAdjugate ()</strong>
+    </dt>
+    <dd>
+    Returns the adjugate of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        table adjugate The adjugate of the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getTrace"></a>
+    <strong>getTrace ()</strong>
+    </dt>
+    <dd>
+    Returns the trace of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number trace The trace of the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getNorm"></a>
+    <strong>getNorm ()</strong>
+    </dt>
+    <dd>
+    Returns the norm of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number norm The norm of the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getRank"></a>
+    <strong>getRank ()</strong>
+    </dt>
+    <dd>
+    Returns the rank of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number rank The rank of the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getConditionNumber"></a>
+    <strong>getConditionNumber ()</strong>
+    </dt>
+    <dd>
+    Returns the condition number of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number conditionNumber The condition number of the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getEigenvalues"></a>
+    <strong>getEigenvalues ()</strong>
+    </dt>
+    <dd>
+    Returns the eigenvalues of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        table? eigenvalues The eigenvalues of the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getInverse"></a>
+    <strong>getInverse ()</strong>
+    </dt>
+    <dd>
+    Returns the inverse of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        matrix? inverse The inverse of the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getLUPDecomposition"></a>
+    <strong>getLUPDecomposition ()</strong>
+    </dt>
+    <dd>
+    Returns the LUP decomposition of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+        matrix L The lower triangular matrix.</li>
+        <li>
+        matrix U The upper triangular matrix.</li>
+        <li>
+        table P The permutation matrix.</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getLU"></a>
+    <strong>getLU ()</strong>
+    </dt>
+    <dd>
+    Returns the LU decomposition of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+        matrix L The lower triangular matrix.</li>
+        <li>
+        matrix U The upper triangular matrix.</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getQR"></a>
+    <strong>getQR ()</strong>
+    </dt>
+    <dd>
+    Returns the QR decomposition of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+        matrix Q The orthogonal matrix.</li>
+        <li>
+        matrix R The upper triangular matrix.</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getCholesky"></a>
+    <strong>getCholesky ()</strong>
+    </dt>
+    <dd>
+    Returns the Cholesky decomposition of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        matrix L The lower triangular matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getCopy"></a>
+    <strong>getCopy ()</strong>
+    </dt>
+    <dd>
+    Returns a copy of the matrix.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        matrix copy The copy of the matrix.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "swapRows"></a>
+    <strong>swapRows (i, j)</strong>
+    </dt>
+    <dd>
+    Swaps two rows of the matrix.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">i</span>
+         number The index of the first row.
+        </li>
+        <li><span class="parameter">j</span>
+         number The index of the second row.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "swapColumns"></a>
+    <strong>swapColumns (i, j)</strong>
+    </dt>
+    <dd>
+    Swaps two columns of the matrix.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">i</span>
+         number The index of the first column.
+        </li>
+        <li><span class="parameter">j</span>
+         number The index of the second column.
+        </li>
+    </ul>
+
 
 
 
@@ -217,7 +948,7 @@
 </div> <!-- id="main" -->
 <div id="about">
 <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
-<i style="float:right;">Last updated 2022-11-18 18:50:59 </i>
+<i style="float:right;">Last updated 2022-11-18 21:07:47 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>
