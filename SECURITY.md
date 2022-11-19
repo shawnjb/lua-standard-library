@@ -4,7 +4,7 @@ A general overview of the security guidelines.
 
 ## Reporting a Vulnerability
 
-When a network based module or algorithm is implemented; vulnurabilities are possible. In the case of an active vulnurability, message me [directly on discord](https://discord.com/users/1020933580517548093) or [report a vulnurability privately on this repository](https://github.com/shawnjb/lua-standard-library/security) before taking any action on your behalf.
+When a network based module or algorithm is implemented; vulnurabilities are possible. In the case of an active vulnurability, message me [directly on discord](https://discord.com/users/1043411743424139295) or [report a vulnurability privately on this repository](https://github.com/shawnjb/lua-standard-library/security) before taking any action on your behalf.
 
 ## Questions Answered
 

@@ -6,7 +6,7 @@ The following is a set of guidelines for contributing to Lua Standard Library. T
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to me [personally on Discord](https://discord.com/users/1020933580517548093).
+This project and everyone participating in it is governed by the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to me [personally on Discord](https://discord.com/users/1043411743424139295).
 
 ## I don't want to read this whole thing I just have a question!!!
 
