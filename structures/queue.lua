@@ -19,6 +19,7 @@ function queue.new(type)
 	elseif type == "priorityqueue" then
 		return priorityqueue:new()
 	end
+	return error("Invalid queue type: " .. type)
 end
 
 return queue
