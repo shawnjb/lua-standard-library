@@ -1,3 +1,5 @@
+--- Copyright (c) 2022, Shawn Bragdon
+--- All rights reserved.
 --- @meta
 
 --- Find the strongly connected components of a directed graph.

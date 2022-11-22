@@ -1,3 +1,5 @@
+--- Copyright (c) 2022, Shawn Bragdon
+--- All rights reserved.
 --- @meta
 
 --- Reconstructs the path from the start to the goal. You can find an example of this function in the source code.

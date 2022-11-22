@@ -14,26 +14,4 @@ Everyone is allowed to contribute. Just open an issue, create a fork & submit a 
 
 ## Usage
 
-The use of the structures & algorithms is quite easy. Clone the repository to your project folder, and import & instantiate the structure class.
-
-An example of using an algorithm would be the following:
-
-```lua
-local algorithm = require("algorithm")
-
-local array = {1, 3, 7, 4, 6, 9, 8, 5}
-print(table.concat(array, algorithm(array)))
-```
-
-An example of using a structure would be the following:
-
-```lua
-local structure = require("structure")
-local object = structure:new()
-
-object:insert(...)
-
-print("The object contains " .. object:count() .. " elements.")
-```
-
-Please refer to the documentation for detailed information on what is available and what can be used. The files support lua documentation snippets & work best with [Sumneko's Lua Language Server extension](https://github.com/sumneko/lua-language-server).
+Feel free to include the classes & functions folders in your own repository.

@@ -1,3 +1,5 @@
+--- Copyright (c) 2022, Shawn Bragdon
+--- All rights reserved.
 --- @meta
 
 --- @class PriorityQueue
