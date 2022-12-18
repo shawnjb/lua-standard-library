@@ -6,13 +6,13 @@ The following is a set of guidelines for contributing to Lua Standard Library. T
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to me [personally on Discord](https://discord.com/users/1043411743424139295).
+This project and everyone participating in it is governed by the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to me [personally on Discord](https://discord.com/users/1045168213358555218).
 
 ## I don't want to read this whole thing I just have a question!!!
 
 > **Note:** Please don't file an issue to ask a question. You'll get faster results by using the resources below.
 
-We have an official [Discord server](https://discord.gg/Pe9FG9dNnE) dedicated to myself (shawnjb). You can use this server to ask questions about the project, get help with issues you're having, and more. You can also use the channel to chat with the community and the developers.
+We have an official [Discord server](https://discord.gg/zzZEfHEAp7) dedicated to myself (shawnjb). You can use this server to ask questions about the project, get help with issues you're having, and more. You can also use the channel to chat with the community and the developers.
 
 ## What should I know before I get started?
 
@@ -36,7 +36,7 @@ This section guides you through submitting a bug report for Lua Standard Library
 
 #### Before Submitting A Bug Report
 
-* **Check the [Discord server](https://discord.gg/Pe9FG9dNnE) for a solution.** The Discord server is the best place to get help with issues you're having. You can also use the channel to chat with the community and the developers.
+* **Check the [Discord server](https://discord.gg/zzZEfHEAp7) for a solution.** The Discord server is the best place to get help with issues you're having. You can also use the channel to chat with the community and the developers.
 
 * **Check the [Issues](https://github.com/shawnjb/lua-standard-library/issues) to make sure it hasn't already been reported.** If it has and the issue is still open, add a comment to the existing issue instead of opening a new one.
 
