@@ -1,17 +1,9 @@
 <h1><img src="https://asset.brandfetch.io/idpR3qNoyU/id_LDWZ-VP.svg" alt="lua_logo" width="24px" /> Lua Standard Library</h1>
 
-Implement popular data structures & algorithms into your Lua applications. This repository is a completely rewritten version of the portuguese version, which can be found [here](https://github.com/tomieiro/LuaSTDL).
+This repository includes a selection of classes and algorithms for use in Lua projects. The included Graph class allows users to create and manipulate graph data structures, while the DijkstraPath algorithm can find the shortest path between two vertices in a graph. There are also several other data structures and algorithms available, such as circular buffers, priority queues, and sorting algorithms. These tools can easily be integrated into your projects to provide added functionality.
 
-Interested in learning Lua? Try taking a [Codecademy course on Lua](https://www.codecademy.com/learn/learn-lua), or read the [official documentation](https://lua.org/).
+The original Portuguese version of these tools can be found at https://github.com/tomieiro/LuaSTDL. If you're new to Lua and want to learn more, consider taking a Codecademy course on the subject at https://www.codecademy.com/learn/learn-lua or reading the official documentation at https://lua.org/.
 
 ## Motivation
 
-Creating an independant and open source repository with various data structures that are implemented in Lua. The idea of the project was to expand the library through contributions & suggestions.
-
-## Contributing
-
-Everyone is allowed to contribute. Just open an issue, create a fork & submit a pull request. Read the [contribution guidelines](./CONTRIBUTING.md) for all details regarding this process.
-
-## Usage
-
-Feel free to include the classes & functions folders in your own repository.
+As the developer of this repository, my motivation for creating and sharing these classes and algorithms written in Lua would be to provide a useful resource for other developers working with the language. I believe that these tools can easily be integrated into a variety of Lua projects, adding powerful functionality and making it easier for developers to build the applications they envision. I hope that other developers will find these resources useful and will be able to utilize them to create even more impressive projects with Lua.
