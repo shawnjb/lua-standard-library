@@ -1,0 +1,101 @@
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+*.class
+.metadata
+.recommenders
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.nb-gradle/
+
+# Visual Studio Code
+.vscode/
+
+# Maven
+log/
+target/
+
+# sbt
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Scala
+*.class
+
+# C/C++
+*.[oa]
+*.so
+*.dylib
+
+# Node.js
+node_modules/
+
+# Visual Studio
+*.suo
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.user
+*.sdf
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspective
+*.xcuserstate
+xcuserdata/
+
+# OSX Finder
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ruby
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/.yardoc/
+/.bundle/
+/vendor/bundle
+*.rbc
+
+# Go
+*.a
+*.o
+*.test
+*.prof
+
+# Java
+*.class
+*.war
+*.ear
