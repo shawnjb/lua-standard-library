@@ -1,5 +1,3 @@
---- node for tree
-
 local Node = {}
 Node.__index = Node
 
