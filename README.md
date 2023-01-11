@@ -7,3 +7,7 @@ The original Portuguese version of these tools can be found at https://github.co
 ## Motivation
 
 As the developer of this repository, providing a useful resource for other developers is something I've always found intriguing. I believe that these tools can easily be integrated into a variety of Lua projects, adding powerful functionality and making it easier for developers to build the applications they envision. I hope that other developers will find these resources useful and will be able to utilize them to create even more impressive projects with Lua.
+
+## More Information
+
+For more information on the tools included in this repository, please refer to the [documentation](./docs/README.md).
