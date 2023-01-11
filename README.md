@@ -1,13 +1,15 @@
 <h1><img src="https://asset.brandfetch.io/idpR3qNoyU/id_LDWZ-VP.svg" alt="lua_logo" width="24px" /> Lua Standard Library</h1>
 
-This repository includes a selection of classes and algorithms for use in Lua projects. There are several data structures and algorithms available, such as circular buffers, priority queues, and sorting algorithms. These tools can easily be integrated into your projects to provide added functionality.
+This repository is undergoing a major rewrite. The new version will be released soon.
 
-The original Portuguese version of these tools can be found at https://github.com/tomieiro/LuaSTDL. If you're new to Lua and want to learn more, consider taking a Codecademy course on the subject at https://www.codecademy.com/learn/learn-lua or reading the official documentation at https://lua.org/.
+## Developer Notes
 
-## Motivation
+Expected file structure in the future may look like this:
 
-As the developer of this repository, providing a useful resource for other developers is something I've always found intriguing. I believe that these tools can easily be integrated into a variety of Lua projects, adding powerful functionality and making it easier for developers to build the applications they envision. I hope that other developers will find these resources useful and will be able to utilize them to create even more impressive projects with Lua.
+* A top-level directory called src that contains all of the source code for the library.
 
-## More Information
+* Within the src directory, subdirectories organized by module or functionality. For example, one subdirectory for sorting algorithms, one for data structures, etc.
 
-For more information on the tools included in this repository, please refer to the [documentation](./docs/README.md).
+* Each subdirectory would contain one or more Lua files, where each file defines a module, class, or set of related functions.A top-level directory called tests that contains test files for the library.
+
+* An additional top-level directory called docs for documentation of library usage and usage examples. This is just one possible file structure, but this one is more maintainable and understandable for other developers who would like to use it and can also help to improve code reusability.
