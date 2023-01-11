@@ -19,7 +19,7 @@
 --- }
 --- ```
 --- @return table minimum The minimum spanning tree.
-function MinimumSpanningTree(graph)
+function min_spanning_tree(graph)
     local function find_set(x)
         if x ~= graph[x] then
             graph[x] = find_set(graph[x])

@@ -7,7 +7,7 @@
 ---
 --- Requires an existing array.
 --- @param array table The array to sort.
-function MergeSort(array)
+function merge_sort(array)
 	if #array > 1 then
 		local mid = math.floor(#array / 2)
 		local left = {}
@@ -18,8 +18,8 @@ function MergeSort(array)
 		for i = mid + 1, #array do
 			right[i - mid] = array[i]
 		end
-		MergeSort(left)
-		MergeSort(right)
+		merge_sort(left)
+		merge_sort(right)
 		local i = 1
 		local j = 1
 		local k = 1

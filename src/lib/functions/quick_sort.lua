@@ -6,7 +6,7 @@
 --- @param array table The array to partition.
 --- @param low number The low index.
 --- @param high number The high index.
-function Partition(array, low, high)
+local function partition(array, low, high)
 	local pivot = array[high]
 	local i = low - 1
 	for j = low, high - 1 do
@@ -23,11 +23,11 @@ end
 --- @param array table The array to sort.
 --- @param low number The low index.
 --- @param high number The high index.
-function Sort(array, low, high)
+local function sort(array, low, high)
 	if low < high then
-		local pi = Partition(array, low, high)
-		Sort(array, low, pi - 1)
-		Sort(array, pi + 1, high)
+		local pi = partition(array, low, high)
+		sort(array, low, pi - 1)
+		sort(array, pi + 1, high)
 	end
 end
 
@@ -36,6 +36,6 @@ end
 ---
 --- Requires an existing array.
 --- @param array table The array to sort.
-function QuickSort(array)
-	Sort(array, 1, #array)
+function quick_sort(array)
+	sort(array, 1, #array)
 end
