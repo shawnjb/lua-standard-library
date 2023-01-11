@@ -1,6 +1,6 @@
 <h1><img src="https://asset.brandfetch.io/idpR3qNoyU/id_LDWZ-VP.svg" alt="lua_logo" width="24px" /> Lua Standard Library</h1>
 
-This repository includes a selection of classes and algorithms for use in Lua projects. The included Graph class allows users to create and manipulate graph data structures, while the DijkstraPath algorithm can find the shortest path between two vertices in a graph. There are also several other data structures and algorithms available, such as circular buffers, priority queues, and sorting algorithms. These tools can easily be integrated into your projects to provide added functionality.
+This repository includes a selection of classes and algorithms for use in Lua projects. There are several data structures and algorithms available, such as circular buffers, priority queues, and sorting algorithms. These tools can easily be integrated into your projects to provide added functionality.
 
 The original Portuguese version of these tools can be found at https://github.com/tomieiro/LuaSTDL. If you're new to Lua and want to learn more, consider taking a Codecademy course on the subject at https://www.codecademy.com/learn/learn-lua or reading the official documentation at https://lua.org/.
 
