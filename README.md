@@ -15,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/lua-standard-library.git
+git clone https://github.com/shawnjb/lua-standard-library.git
 ```
 
 ### Running the tests
