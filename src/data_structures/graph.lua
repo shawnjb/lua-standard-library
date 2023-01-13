@@ -1,36 +1,48 @@
 local graph = {}
 graph.__index = graph
 
-function graph.new(num_vertices)
-    local new_graph = {}
-    setmetatable(new_graph, graph)
-    new_graph.num_vertices = num_vertices
-    new_graph.adjacency_list = {}
-    for i = 1, num_vertices do
-        new_graph.adjacency_list[i] = {}
-    end
-    return new_graph
+function graph.new()
+    local graph = setmetatable({}, graph)
+    graph.adj_list = {}
+    return graph
 end
 
-function graph:add_edge(from, to)
-    table.insert(self.adjacency_list[from], to)
+function graph:add_vertex(vertex)
+    if not self.adj_list[vertex] then
+        self.adj_list[vertex] = {}
+    end
 end
 
-function graph:remove_edge(from, to)
-    for i, v in ipairs(self.adjacency_list[from]) do
-        if v == to then
-            table.remove(self.adjacency_list[from], i)
-            return
-        end
+function graph:add_edge(vertex1, vertex2, weight)
+    weight = weight or 1
+    self:add_vertex(vertex1)
+    self:add_vertex(vertex2)
+    self.adj_list[vertex1][vertex2] = weight
+    self.adj_list[vertex2][vertex1] = weight
+end
+
+function graph:get_edge_weight(vertex1, vertex2)
+    return self.adj_list[vertex1][vertex2]
+end
+
+function graph:remove_edge(vertex1, vertex2)
+    self.adj_list[vertex1][vertex2] = nil
+    self.adj_list[vertex2][vertex1] = nil
+end
+
+function graph:remove_vertex(vertex)
+    for neighbor in pairs(self.adj_list[vertex]) do
+        self.adj_list[neighbor][vertex] = nil
     end
+    self.adj_list[vertex] = nil
 end
 
 function graph:__tostring()
     local str = ""
-    for i = 1, self.num_vertices do
-        str = str .. i .. " -> "
-        for j = 1, #self.adjacency_list[i] do
-            str = str .. self.adjacency_list[i][j] .. " "
+    for vertex, neighbors in pairs(self.adj_list) do
+        str = str .. vertex .. " -> "
+        for neighbor in pairs(neighbors) do
+            str = str .. neighbor .. " "
         end
         str = str .. "\n"
     end
