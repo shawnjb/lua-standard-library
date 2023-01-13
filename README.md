@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-- Lua 5.3 or higher.
+- Lua 5.1 or higher.
 
 ### Installing
 
